@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Pathi | Developer Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Sneha<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="mobile-menu-btn" aria-label="Mobile Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content reveal-left">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Sneha Pathi</h1>
+                    <h2 class="title gradient-text">Aspiring Software Developer | Full Stack Enthusiast | Problem Solver
+                    </h2>
+                    <p class="tagline">
+                        "Driven to create efficient, scalable, and innovative digital solutions while continuously
+                        learning and growing as a software professional."
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="assets/SNEHA_RESUME_PORTFOLIO.pdf" class="btn btn-outline" download>
+                            Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/snehapathi/" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/snehapathi" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image reveal-right">
+                    <div class="blob-wrapper">
+                        <!-- Hero Profile Image -->
+                        <div class="blob"></div>
+                        <img src="assets/profile.png" alt="Sneha Pathi" class="profile-img">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title reveal-up">About Me</h2>
+                <div class="about-content reveal-up">
+                    <div class="about-text card glass-card">
+                        <p>
+                            Hi! I’m Sneha Pathi, a Computer Science student at KL University skilled in C, C++, Java,
+                            Python, web development, and UI/UX design. I completed an internship at <strong>Codeon
+                                Technologies</strong>, where I built UI/UX prototypes and a portfolio website.
+                        </p>
+                        <p>
+                            My projects include a Farmer-Friendly Web App, a Career Guidance platform, and YouTube
+                            Sentiment Analysis, demonstrating my full-stack and data skills. I’m also a Radio Jockey at
+                            <strong>KL University</strong>, which helps me combine creativity and communication with
+                            technology. I love learning new technologies and building interactive, user-friendly
+                            applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title reveal-up">My Skills</h2>
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-category card reveal-up" style="--delay: 0.1s">
+                        <h3><i class="fas fa-code gradient-text"></i> Programming</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag"><i class="fab fa-cuttlefish"></i> C</span>
+                            <span class="skill-tag"><i class="fab fa-cuttlefish"></i> C++</span>
+                            <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        </div>
+                    </div>
+                    <!-- Web Development -->
+                    <div class="skill-category card reveal-up" style="--delay: 0.2s">
+                        <h3><i class="fas fa-globe gradient-text"></i> Web Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="skill-category card reveal-up" style="--delay: 0.3s">
+                        <h3><i class="fas fa-tools gradient-text"></i> Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
+                            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+                            <span class="skill-tag"><i class="fas fa-moon"></i> Eclipse</span>
+                        </div>
+                    </div>
+                    <!-- Database -->
+                    <div class="skill-category card reveal-up" style="--delay: 0.4s">
+                        <h3><i class="fas fa-database gradient-text"></i> Database</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag"><i class="fas fa-server"></i> Oracle SQL</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title reveal-up">Featured Projects</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card card reveal-up" style="--delay: 0.1s">
+                        <div class="project-img-container">
+                            <img src="assets/project-farmer.png" alt="Farmer Friendly Web App" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/snehapathi" target="_blank"
+                                    class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Farmer Friendly Web App</h3>
+                            <p>A full-stack platform that connects farmers directly with buyers, allowing farmers to
+                                list products, track sales, and access market insights while buyers can place orders
+                                easily.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card card reveal-up" style="--delay: 0.2s">
+                        <div class="project-img-container">
+                            <img src="assets/project-career.png" alt="Career Guidance Road Map" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/snehapathi" target="_blank"
+                                    class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Career Guidance Road Map</h3>
+                            <p>An interactive platform built with HTML, CSS, JavaScript, PHP, and MySQL to help students
+                                explore career paths and track educational opportunities efficiently.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card card reveal-up" style="--delay: 0.3s">
+                        <div class="project-img-container">
+                            <img src="assets/project-youtube.png" alt="YouTube Sentiment Analysis" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/SnehaPathi/Youtube-sentiment-anlysis" target="_blank"
+                                    class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>YouTube Sentiment Analysis</h3>
+                            <p>A machine learning system that classifies YouTube comments as positive, negative, or
+                                neutral using NLP techniques and the YouTube Data API to analyze audience trends.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>NLP</span>
+                                <span>Scikit-Learn</span>
+                                <span>YouTube API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Experience Section -->
+        <section id="experience" class="timeline-section section">
+            <div class="container">
+                <div class="two-columns">
+                    <!-- Experience -->
+                    <div class="column reveal-left">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content card glass-card">
+                                    <h3>UI/UX Design Intern</h3>
+                                    <h4>Codeon Technologies</h4>
+
+                                    <p>Worked on UI/UX design, portfolio development, case studies, and product research
+                                        using Figma.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="column reveal-right">
+                        <h2 class="section-title">Achievements</h2>
+                        <div class="achievements-list">
+                            <div class="achievement-item card glass-card">
+                                <i class="fas fa-certificate gradient-text"></i>
+                                <div>
+                                    <h3>Web Development Certification</h3>
+                                    <p>Codeon Technologies</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item card glass-card">
+                                <i class="fas fa-microphone gradient-text"></i>
+                                <div>
+                                    <h3>Selected Radio Jockey</h3>
+                                    <p>Radio Jack KL University</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item card glass-card">
+                                <i class="fas fa-laptop-code gradient-text"></i>
+                                <div>
+                                    <h3>Participated in Flipkart Runway Hackathon</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title reveal-up">Get in Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info reveal-left">
+                        <h3>Let's connect!</h3>
+                        <p>I’m open to collaborations, internships, and opportunities to create meaningful projects
+                            together</p>
+
+                        <div class="contact-email-card card glass-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Me</h4>
+                                <a href="mailto:snehapathi05@gmail.com">snehapathi05@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <h4 class="social-title">Connect with me</h4>
+                        <div class="contact-socials">
+                            <a href="https://www.linkedin.com/in/snehapathi/" target="_blank" aria-label="LinkedIn"
+                                class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/snehapathi" target="_blank" aria-label="GitHub"
+                                class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://leetcode.com/u/sneha_pathi/" target="_blank" aria-label="LeetCode"
+                                class="social-icon">
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a href="https://www.codechef.com/users/klu2300039079" target="_blank" aria-label="CodeChef"
+                                class="social-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </a>
+                            <a href="https://www.hackerrank.com/profile/snehapathi05" target="_blank"
+                                aria-label="HackerRank" class="social-icon">
+                                <i class="fab fa-hackerrank"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form card glass-card reveal-right" id="contactForm" novalidate>
+                        <div id="formStatus" class="form-status"></div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <span class="error-text" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                            <span class="error-text" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Message</label>
+                            <span class="error-text" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>Copyright &copy; 2026 Sneha Pathi. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/snehapathi/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/snehapathi" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

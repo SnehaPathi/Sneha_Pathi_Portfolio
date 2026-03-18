@@ -1,0 +1,7 @@
+.antigravity/
+.system_generated/
+tmp/
+*.pyc
+__pycache__/
+copy_media.py
+copy_resume.py
