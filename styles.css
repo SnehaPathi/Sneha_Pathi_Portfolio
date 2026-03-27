@@ -613,18 +613,19 @@ ul {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-                box-shadow 0.4s ease, 
-                border-color 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
     height: 100%;
 }
 
 .project-card:hover {
     transform: translateY(-20px) scale(1.04);
-    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.25), 
-                0 0 30px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.25),
+        0 0 30px rgba(139, 92, 246, 0.3);
     border-color: var(--primary);
-    background: rgba(30, 41, 59, 0.85); /* Slightly darker on hover for contrast */
+    background: rgba(30, 41, 59, 0.85);
+    /* Slightly darker on hover for contrast */
     z-index: 10;
 }
 
@@ -715,6 +716,7 @@ ul {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
